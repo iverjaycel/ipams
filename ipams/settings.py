@@ -16,7 +16,7 @@ SECRET_KEY = '6Ld-guEbAAAAANAgbmQI2Ph6knhKsOglaOEEuyp3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://b539-2001-4454-3ba-2f00-88ec-a068-f58-7a47.ap.ngrok.io']
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL = 'accounts.User'
 
