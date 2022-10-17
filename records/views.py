@@ -2074,7 +2074,7 @@ class Dashboard(View):
                 # adviser_pending_count = adviser_pending.count()
                 with connection.cursor() as cursor:
                     cursor.execute(
-                        f"select records_record.id, records_record.title, records_checkedrecord.checked_by_id from records_record left join records_checkedrecord on records_record.id = records_checkedrecord.record_id where checked_by_id is null")
+                        "select records_record.id, records_record.title, records_checkedrecord.checked_by_id from records_record left join records_checkedrecord on records_record.id = records_checkedrecord.record_id where checked_by_id is null")
                     rows = cursor.fetchall()
                     print(rows)
                     adviser_pending_count = len(rows)
