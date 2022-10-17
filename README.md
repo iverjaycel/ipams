@@ -1,7 +1,0 @@
-# ipams
-
-Deployment
-
-Changes 
-
-Scan  
