@@ -32,7 +32,7 @@ def authorized_record_user():
                 user_records.count() == 1
                 or request.user.role.name in ['KTTO', 'RDCO', 'ITSO', 'TBI']
                 or record in records
-             ):
+            ):
                 return view_func(request, record_id, *args, **kwargs)
             return render(request, 'accounts/unauthorized_user.html')
         return wrapper_func
